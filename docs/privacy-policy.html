@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Frigate Viewer Pro</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+        h1 { color: #1a1a1a; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #2a2a2a; margin-top: 30px; }
+        h3 { color: #444; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        a { color: #0066cc; }
+        .updated { color: #666; font-style: italic; }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy — Frigate Viewer Pro</h1>
+    <p class="updated">Last updated: March 6, 2026</p>
+
+    <h2>Overview</h2>
+    <p>Frigate Viewer Pro ("the App") is a mobile application that connects to your self-hosted Frigate NVR instance. Your privacy is important to us. This policy explains what data the App collects, processes, and stores.</p>
+
+    <h2>Data Collection</h2>
+
+    <h3>Data We Do NOT Collect</h3>
+    <ul>
+        <li>We do <strong>not</strong> collect personal data</li>
+        <li>We do <strong>not</strong> use analytics or tracking services</li>
+        <li>We do <strong>not</strong> send any data to our servers or third parties</li>
+        <li>We do <strong>not</strong> use advertising SDKs</li>
+        <li>We do <strong>not</strong> have a backend server — the App communicates exclusively with your own Frigate NVR</li>
+    </ul>
+
+    <h3>Data Stored Locally on Your Device</h3>
+    <p>The App stores the following data <strong>only on your device</strong> using encrypted storage and shared preferences:</p>
+    <ul>
+        <li><strong>Server credentials</strong> (URL, username, password, JWT token) — stored in encrypted storage (Android Keystore)</li>
+        <li><strong>App settings</strong> (language, download path, alert preferences, camera configuration) — stored in shared preferences</li>
+        <li><strong>MQTT connection details</strong> (host, port) — stored in shared preferences</li>
+        <li><strong>Downloaded snapshots and video clips</strong> — stored in the device's download folder</li>
+    </ul>
+    <p>This data never leaves your device and is not accessible to us.</p>
+
+    <h3>Network Communication</h3>
+    <p>The App communicates exclusively with:</p>
+    <ul>
+        <li><strong>Your Frigate NVR server</strong> — via HTTP/HTTPS for API calls, video streams, and event data</li>
+        <li><strong>Your go2rtc server</strong> — via WebRTC (WHEP) for low-latency live streaming</li>
+        <li><strong>Your MQTT broker</strong> — for real-time event notifications</li>
+    </ul>
+    <p>All network communication is between your device and your own self-hosted infrastructure. No data is sent to external servers.</p>
+
+    <h3>In-App Purchases</h3>
+    <p>The App uses RevenueCat for optional tip jar purchases. RevenueCat processes purchase transactions through Google Play. RevenueCat's privacy policy can be found at: <a href="https://www.revenuecat.com/privacy/">revenuecat.com/privacy</a></p>
+
+    <h3>Notifications</h3>
+    <p>The App can display local notifications for camera detection events. These notifications are generated entirely on-device based on data from your Frigate NVR. No push notification service (e.g., Firebase Cloud Messaging) is used.</p>
+
+    <h2>Camera and Video Data</h2>
+    <p>The App displays live camera streams, recorded events, and snapshots from your Frigate NVR. This data is:</p>
+    <ul>
+        <li>Streamed directly from your Frigate NVR to your device</li>
+        <li>Never routed through any third-party server</li>
+        <li>Never stored by us</li>
+    </ul>
+    <p>You are solely responsible for the operation of your Frigate NVR and compliance with local surveillance laws (e.g., GDPR, BDSG).</p>
+
+    <h2>Data Sharing</h2>
+    <p>We do not share any data with third parties. The App has no capability to do so, as it has no connection to any server other than your own Frigate NVR.</p>
+
+    <h2>Data Retention</h2>
+    <p>All locally stored data can be deleted by:</p>
+    <ul>
+        <li>Clearing the App's data in Android settings</li>
+        <li>Uninstalling the App</li>
+        <li>Manually deleting downloaded files from the download folder</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>The App is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please contact us via GitHub:<br>
+    <a href="https://github.com/maCStacker/frigate-viewer/issues">github.com/maCStacker/frigate-viewer/issues</a></p>
+
+    <h2>Open Source</h2>
+    <p>Frigate Viewer Pro is developed by maCStacker. The App is free to use.</p>
+</body>
+</html>
